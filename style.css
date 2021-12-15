@@ -1,9 +1,9 @@
-html {
-  height: max-content;
+html body{
+  height: 100%;
 }
 
 body {
-
+color: #3c4247;
 background-color: rgb(212, 154, 45);
 }
 
@@ -30,7 +30,8 @@ background-color: rgb(212, 154, 45);
 
   /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
+  color: #3c4247;
+    background-color: #e4e1c2;
     float: right;
     /*margin-right: 20px;*/
     margin-right: 5%;
@@ -60,26 +61,57 @@ background-color: rgb(212, 154, 45);
 
 
 button {
-  border-radius: 6px;
   margin: 0;
   position: absolute;
   top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #3c4247;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: #f6dc72;
+  border: peru 1.5px solid;
+  border-radius: 6px;
+  padding: 7px 13px 7px 13px;
+  font-weight: 550;
 }
 
-input {border-radius: 6px;
+button:hover{
+  background-color: #f6dc727c;
+  color: peru;
+  border:  solid 2px;
+  font-weight: 550;
+}
+
+input {
+  color: #3c4247;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 6px;
+  background-color: #ddd7cf;
+  border: solid 1.5px peru;
+  line-height: 1.4;
+}
+
+input:hover {
+  border: solid 1.5px #3c4247;
+}
+
+label {
+  color: #3c4247;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 90%;
+  line-height: 1.4;
 }
 
 #leftScreenContainer {
   position: relative;
   float: left;
-  height: 320px;
-  width: 470px;
+  height: 340px;
+  width: 472px;
   margin-top: 60px;
   border-radius: 25px;
   padding: 10px;
   background-color: wheat;
+  justify-content: center;
   }
 
 #flexContainer {
@@ -88,32 +120,55 @@ input {border-radius: 6px;
   background-color: peru;
   border-radius: 20px;
   border: none;
-  width: 100%;
-  height: 66%;
-  justify-content: center;
+  width: 452px;
+  height: 63%;
+  padding: 5px;
+  justify-content: space-around;
   align-items: center;
 }
 
-.innerDiv #inv1 {
+.innerDiv {
   background-color: seashell;
   margin: 10px;
-  padding: none;
-  height: 20%;
+  height: 175px;
+  width: 33%;
   border-radius: 20px;
-  border: none;
-}
+  border: transparent;
+ }
+
+ .innerDiv:hover {
+   border-radius: 20px;
+   border: #e4d5c2 solid 2.5px;
+ }
 
 
 
 #previewDisplay {
   float: right;
-  width: 490px;
-  height:  340px;
+  width: 493px;
+  height:  360px;
   margin-top: 60px;
   margin-bottom: 50px;
   border-style: none;
   border-radius: 25px;
   background-color: wheat;
+}
+
+#prevPara {
+padding: 15px;
+line-height: 1.33;
+text-align: center;
+vertical-align: middle;
+word-wrap: normal;
+font-size: 55px;
+font-style: italic;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#innerPrev {
+
+  display: none;
+
 }
 
 .invitePara {
@@ -127,4 +182,5 @@ input {border-radius: 6px;
 
 h2 {
   text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
