@@ -24,6 +24,9 @@ window.onclick = function(event) {
   }
 }
 
+//Flex box actions
+
+
 
 //Key up events on invite
 
@@ -59,3 +62,10 @@ function timeDetail() {
   document.getElementById("wedTime").innerHTML = x;
 }
 
+document.getElementById("address").addEventListener("keyup", addDetail);
+
+function addDetail() {
+  
+  let x = document.getElementById("address").value;
+  document.getElementById("wedAdd").innerHTML = x;
+}

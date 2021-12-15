@@ -8,14 +8,28 @@
 
 </body>
 
-<div id=flexcontainer>
+<div id=leftScreenContainer>
 
-  <h2>Invites in Flex Box</h2>
+  
+
+  <h2>Choose Your Style</h2>
+  <!-- Flex Box with invite designs -->
+  <div id="flexContainer">
+
+    <div class="innerDiv" id="inv1" style="background-image: url('invite images/floral_2.png');"></div>
+
+    <div class="innerDiv" id="inv2" style="background-image: url('invite images/stripes_edit.png');" ></div>
+
+    <div class="innerDiv" id="inv3" style="background-image: url('invite images/Swirls_blur.png');" ></div>
+
+
+  </div>
 
   <!-- Trigger/Open The Modal -->
   <button id="myBtn">Personalise</button>
 
-  <br><br><br>
+    
+  
 </div>
 
 <!-- The Modal -->
@@ -26,28 +40,25 @@
     <span class="close">&times;</span>
     <!--<p>Form with real-time typing to go here</p>-->
     <form id="basicDetails">
-        <label for="fname">First Partner's Name</label><br>
-        <input type="text" name="fname" id="fname">
 
-        <br><br>
-        <label for="sname">Second Partner's Name</label>
-        <input type="text" name="sname" id="sname">
-        
-        <br><br>
-        <label for="date">Date of Wedding</label><br>
-        <input type="text" name="date" id="date">
+      <label for="fname">First Partner's Name</label><br>
+      <input type="text" name="fname" id="fname">
 
-        <br><br>
-        <label for="time">Time</label><br>
-        <input type="text" name="time" id="time">
+      <br><br>
+      <label for="sname">Second Partner's Name</label><br>
+      <input type="text" name="sname" id="sname">
+      
+      <br><br>
+      <label for="date">Date of Wedding</label><br>
+      <input type="text" name="date" id="date">
 
-        <br><br>
-        <label for="address">Location of Ceremony</label><br>
-        <input type="text" name="address" id="address">
+      <br><br>
+      <label for="time">Time</label><br>
+      <input type="text" name="time" id="time">
 
-        <br><br>
-        <label for="time">Time</label><br>
-        <input type="text" name="time" id="time"><br>
+      <br><br>
+      <label for="address">Location of Ceremony</label><br>
+      <input type="text" name="address" id="address">
 
     </form>
   </div>
@@ -59,31 +70,31 @@
 <section id=rightScreen>
   <div id="previewDisplay">
 
-    <p class="invitePara">This will go on the invite: <br><span id="invPtrOne"></span></p>
+    <p class="invitePara"><span id="invPtrOne"></span></p>
 
-    <br>
+    
 
     <p id="ptnrAnd">and</p>
 
-    <br>
 
     <p class="invitePara"><span id="invPtrTwo"></span></p>
 
-    <br>
+    
 
     <p id="cele">invite you to celebrate with them on</p>
 
-    <br>
+    
 
     <p class="invitePara"><span id="wedDate"></span></p>
 
-    <br>
+    
 
     <p id="preTime">at</p>
 
-    <br>
 
     <p class="invitePara"><span id="wedTime"></span></p>
+
+    <p class="invitePara"><span id="wedAdd"></span></p>
 
   </div>
 </section>
