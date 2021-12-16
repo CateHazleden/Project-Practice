@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Elsie:wght@400;900&family=Oi&family=Smythe&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -10,21 +14,29 @@
 
 <div id=leftScreenContainer>
 
-  <h2>Choose Your Style</h2>
+  <h2>Choose Your Design</h2>
   <!-- Flex Box with invite designs -->
   <div id="flexContainer">
+  
+      <div class="innerDiv" id="inv1" >
+        <button id="inv1Btn" onclick="inv1Prev()" style="background-image: url('invite images/floral_2.png');"></button>
+        <span class="hoverText" id="hv1">Bouquet</span>
+      </div>
 
-    <div class="innerDiv" id="inv1" style="background-image: url('invite images/floral_2.png');"></div>
+      <div class="innerDiv" id="inv2">
+        <button id="inv2Btn" onclick="inv2Prev()" style="background-image: url('invite images/stripes_edit.png');"></button>
+        <span class="hoverText">Racing to the Alter</span>
+      </div>
 
-    <div class="innerDiv" id="inv2" style="background-image: url('invite images/stripes_edit.png');" ></div>
-
-    <div class="innerDiv" id="inv3" style="background-image: url('invite images/Swirls_blur.png');" ></div>
-
+      <div class="innerDiv" id="inv3" >
+        <button id="inv3Btn" onclick="inv3Prev()" style="background-image: url('invite images/Swirls_blur.png');"></button>
+        <span class="hoverText">Dizzy in Love</span>
+      </div>
 
   </div>
 
   <!-- Trigger/Open The Modal -->
-  <button id="myBtn">Personalise</button>   
+  <button id="modBtn">Personalise</button>   
   
 </div>
 
@@ -62,41 +74,49 @@
 </div>
 
 <!-- Invite Details -->
-<!-- Prob change pclass to pid when styling css -->
+<!-- Prob change pclass to invite pids when styling css -->
 <div id=rightScreenContainer>
   <div id="previewDisplay">
     
+    
+    <div id="prevBorder">
+
     <p id="prevPara">Preview your invitation here!</p>
 
+
+
+    
     <div id="innerPrev">
 
-      
 
-      <p class="invitePara"><span id="invPtrOne"></span></p>
+      <!-- Invite Text -->  
+        <p class="invitePara"><span id="invPtrOne"></span></p>
 
-      
+        
 
-      <p id="ptnrAnd">and</p>
-
-
-      <p class="invitePara"><span id="invPtrTwo"></span></p>
-
-      
-
-      <p id="cele">invite you to celebrate with them on</p>
-
-      
-
-      <p class="invitePara"><span id="wedDate"></span></p>
-
-      
-
-      <p id="preTime">at</p>
+        <p id="ptnrAnd">and</p>
 
 
-      <p class="invitePara"><span id="wedTime"></span></p>
+        <p class="invitePara"><span id="invPtrTwo"></span></p>
 
-      <p class="invitePara"><span id="wedAdd"></span></p>
+        
+
+        <p id="cele">invite you to celebrate with them on</p>
+
+        
+
+        <p class="invitePara"><span id="wedDate"></span></p>
+
+        
+
+        <p id="preTime">at</p>
+
+
+        <p class="invitePara"><span id="wedTime"></span></p>
+
+        <p class="invitePara"><span id="wedAdd"></span></p>
+
+    </div>
 
     </div>
   </div>

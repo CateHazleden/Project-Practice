@@ -4,6 +4,7 @@ html body{
 
 body {
 color: #3c4247;
+font-family: 'Elsie Swash Caps', cursive;
 background-color: rgb(212, 154, 45);
 }
 
@@ -31,7 +32,7 @@ background-color: rgb(212, 154, 45);
   /* Modal Content */
 .modal-content {
   color: #3c4247;
-    background-color: #e4e1c2;
+    background-color: rgb(245, 227, 195);
     float: right;
     /*margin-right: 20px;*/
     margin-right: 5%;
@@ -40,7 +41,7 @@ background-color: rgb(212, 154, 45);
     border-radius: 20px;
     width: 60%;
     overflow: auto;
-    transform: translateY(7%);
+    transform: translateY(3%);
   }
 
 /* The Close Button */
@@ -59,32 +60,36 @@ background-color: rgb(212, 154, 45);
 }
 /*End Modal Content*/
 
-
-button {
+/*Modal button*/
+#modBtn {
   margin: 0;
   position: absolute;
-  top: 93%;
+  top: 92%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #3c4247;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Elsie', cursive;
+  font-weight: 400;
+  font-size: large;
   background-color: #f6dc72;
   border: peru 1.5px solid;
   border-radius: 6px;
   padding: 7px 13px 7px 13px;
-  font-weight: 550;
 }
 
-button:hover{
+#modBtn:hover{
   background-color: #f6dc727c;
   color: peru;
   border:  solid 2px;
-  font-weight: 550;
+  font-weight: 900;
 }
 
+
+/*Inner Modal Inputs*/
 input {
-  color: #3c4247;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #68484d;
+  font-family: 'Elsie', cursive;
+  font-weight: 900;
   border-radius: 6px;
   background-color: #ddd7cf;
   border: solid 1.5px peru;
@@ -97,9 +102,11 @@ input:hover {
 
 label {
   color: #3c4247;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Elsie', cursive;
+  font-weight: 400;
   font-size: 90%;
   line-height: 1.4;
+  margin-left: 2.25px;
 }
 
 #leftScreenContainer {
@@ -109,7 +116,7 @@ label {
   width: 472px;
   margin-top: 60px;
   border-radius: 25px;
-  padding: 10px;
+  padding: 10px 10px 10px 15px;
   background-color: wheat;
   justify-content: center;
   }
@@ -120,15 +127,14 @@ label {
   background-color: peru;
   border-radius: 20px;
   border: none;
-  width: 452px;
+  width: 456px;
   height: 63%;
   padding: 5px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .innerDiv {
-  background-color: seashell;
   margin: 10px;
   height: 175px;
   width: 33%;
@@ -139,10 +145,72 @@ label {
  .innerDiv:hover {
    border-radius: 20px;
    border: #e4d5c2 solid 2.5px;
+   
+   
  }
 
+ .innerDiv .hoverText {
+  visibility: hidden;
+  width: 120px;
+  color: #3c4247;
+  /*top: 50%;  
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  padding: 0 5px;
+  opacity: 0;
+  transition: opacity 1s;
+ }
 
+ .innerDiv:hover .hoverText {
+  visibility: visible;
+  opacity: 1;
+}
+/*Inv1 Button*/
 
+ #inv1Btn {
+  display: block;
+  height: 175px;
+  width: 100%;
+  border-radius: 20px;
+  border: transparent;
+}
+
+.hoverText #hv1 {
+  /*position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through 
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;*/
+  }
+
+/*Inv2 Button*/
+
+ #inv2Btn {
+  
+  height: 175px;
+  width: 100%;
+  border-radius: 20px;
+  border: transparent;
+}
+
+/*Inv3 Button*/
+
+.innerDiv #inv3Btn{
+  
+  height: 175px;
+  width: 100%;
+  border-radius: 20px;
+  border: transparent;
+}
+
+/*Right of Screen*/
 #previewDisplay {
   float: right;
   width: 493px;
@@ -154,20 +222,28 @@ label {
   background-color: wheat;
 }
 
+#prevBorder {
+  border: #e4d5c2 solid 2px;
+  border-radius: 25px;
+  height: 306px;
+  width: 439px;
+  margin: 10px;
+  padding: 15px;
+  line-height: 1.33;
+}
+
 #prevPara {
-padding: 15px;
 line-height: 1.33;
 text-align: center;
 vertical-align: middle;
 word-wrap: normal;
 font-size: 55px;
-font-style: italic;
-font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: 900;
 }
 
 #innerPrev {
 
-  display: none;
+display: none;
 
 }
 
@@ -182,5 +258,5 @@ font-family:Georgia, 'Times New Roman', Times, serif;
 
 h2 {
   text-align: center;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 900;
 }
