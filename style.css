@@ -33,15 +33,14 @@ background-color: rgb(212, 154, 45);
 .modal-content {
   color: #3c4247;
     background-color: rgb(245, 227, 195);
-    float: right;
-    /*margin-right: 20px;*/
+    float: right;  
     margin-right: 5%;
-    padding: 15px;
+    padding: 21px;
     border: 1px solid #888;
     border-radius: 20px;
     width: 60%;
     overflow: auto;
-    transform: translateY(3%);
+    transform: translateY(0.5%);
   }
 
 /* The Close Button */
@@ -87,13 +86,14 @@ background-color: rgb(212, 154, 45);
 
 /*Inner Modal Inputs*/
 input {
-  color: #68484d;
+  color: #6e5d62;
   font-family: 'Elsie', cursive;
   font-weight: 900;
   border-radius: 6px;
   background-color: #ddd7cf;
   border: solid 1.5px peru;
   line-height: 1.4;
+  padding: 2px 0px 0 3px;
 }
 
 input:hover {
@@ -142,12 +142,10 @@ label {
   border: transparent;
  }
 
- .innerDiv:hover {
+ /*.innerDiv:hover {
    border-radius: 20px;
-   border: #e4d5c2 solid 2.5px;
-   
-   
- }
+   border: #e4d5c2 solid 2.5px;  
+ }*/
 
  .innerDiv .hoverText {
   visibility: hidden;
@@ -175,39 +173,83 @@ label {
   border: transparent;
 }
 
-.hoverText #hv1 {
-  /*position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through 
-  color: #f1f1f1;
-  width: 100%;
+.hoverText1  {
+  position: absolute;
+  top: 101px;
+  left: 30px;
+  background: rgba(0, 0,0, 0.5);
+  width: 120px;
   transition: .5s ease;
-  opacity:0;
-  color: white;
+  opacity: 0;
+  color: #e2e0dd;
   font-size: 20px;
-  padding: 20px;
-  text-align: center;*/
+  padding: 75px 5px;
+  text-align: center;
+  border-radius: 20px;
+  border: #e4d5c2 solid 2.5px;
   }
+
+  .btnContainer1:hover .hoverText1 {
+    opacity: 1;
+  }
+  
 
 /*Inv2 Button*/
 
- #inv2Btn {
-  
+ .innerDiv #inv2Btn {
   height: 175px;
   width: 100%;
   border-radius: 20px;
   border: transparent;
 }
 
+.hoverText2  {
+  position: absolute;
+  top: 101px;
+  left: 180px;
+  background: rgba(0, 0,0, 0.5);
+  width: 120px;
+  transition: .5s ease;
+  opacity: 0;
+  color: #e2e0dd;
+  font-size: 20px;
+  padding: 63px 5px;
+  text-align: center;
+  border-radius: 20px;
+  border: #e4d5c2 solid 2.5px;
+  }
+
+  .btnContainer2:hover .hoverText2 {
+    opacity: 1;
+  }
+
 /*Inv3 Button*/
 
 .innerDiv #inv3Btn{
-  
   height: 175px;
   width: 100%;
   border-radius: 20px;
   border: transparent;
+}
+
+.hoverText3 {
+  position: absolute;
+  top: 101px;
+  left: 332px;
+  background: rgba(0, 0,0, 0.5);
+  color: #e2e0dd;
+  width: 120px;
+  transition: .5s ease;
+  opacity: 0;
+  font-size: 20px;
+  padding: 75px 5px;
+  text-align: center;
+  border-radius: 20px;
+  border: #e4d5c2 solid 2.5px;
+ }
+
+.btnContainer3:hover .hoverText3 {
+  opacity: 1;
 }
 
 /*Right of Screen*/
@@ -229,22 +271,28 @@ label {
   width: 439px;
   margin: 10px;
   padding: 15px;
-  line-height: 1.33;
+  
 }
 
 #prevPara {
-line-height: 1.33;
-text-align: center;
-vertical-align: middle;
-word-wrap: normal;
-font-size: 55px;
-font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 25%;
+  word-wrap: normal;
+  font-size: 45px;
+  font-weight: 900;
+  top: 50%;
 }
 
+/*#inv1 {
+  display: none;
+} 
 #innerPrev {
+  display: none;
+}*/
 
-display: none;
-
+.show {
+  display: block;
 }
 
 .invitePara {

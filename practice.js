@@ -26,7 +26,21 @@ window.onclick = function(event) {
 
 //Flex box actions
 
-document.getElementById("inv1")
+//Invitation 1
+
+function inv1Prev() {
+  let InviteOne = document.getElementById("inv1");
+  if (InviteOne.src.match('invite images/floral_2.png')) {
+    InviteOne.src = 'invite images/Swirls_blur.png';
+  }
+  else  {
+    InviteOne.src = 'invite images/floral_2.png';
+  }
+}
+
+//Invitation 2
+
+//Invitation 3
 
 
 //Key up events on invite
