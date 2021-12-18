@@ -11,39 +11,37 @@ background-color: rgb(212, 154, 45);
 
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; 
-    z-index: 1000; /* Sit on top */
-    border-radius: 25px;
-    padding-top: 20px; 
-    /* Location of the box */
-    left: 3px;
-    top: 13%;
-    width: 50%;
-    max-width: 50%; /* Restrained to left div */
-    height: 320px; 
-    min-height: 80%;
-    margin-right: 5%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1000; /* Sit on top */
+  border-radius: 25px;
+  padding-top: 23px; 
+  /* Location of the box */
+  left: 3px;
+  top: 3%;
+  width: 50%;
+  max-width: 50%; /* Restrained to left div */
+  min-height: 89%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
 
   /* Modal Content */
 .modal-content {
   color: #3c4247;
-    background-color: rgb(245, 227, 195);
-    float: right;  
-    margin-right: 5%;
-    padding: 21px;
-    border: 1px solid #888;
-    border-radius: 20px;
-    width: 60%;
-    overflow: auto;
-    transform: translateY(0.5%);
+  background-color: rgb(245, 227, 195);
+  float: right;  
+  margin-right: 3%;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 60%;
+  overflow: auto;
+  transform: translateY(1%);
   }
 
-/* The Close Button */
+/* Modal Close Button */
 .close {
     color: #aaaaaa;
     float: right;
@@ -57,13 +55,11 @@ background-color: rgb(212, 154, 45);
   text-decoration: none;
   cursor: pointer;
 }
-/*End Modal Content*/
 
-/*Modal button*/
+/*Modal Open button*/
 #modBtn {
-  margin: 0;
   position: absolute;
-  top: 92%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #3c4247;
@@ -80,7 +76,9 @@ background-color: rgb(212, 154, 45);
   background-color: #f6dc727c;
   color: peru;
   border:  solid 2px;
-  font-weight: 900;
+  font-family: 'Elsie Swash Caps', cursive;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 
@@ -94,10 +92,18 @@ input {
   border: solid 1.5px peru;
   line-height: 1.4;
   padding: 2px 0px 0 3px;
+  margin-bottom: 14px;
 }
 
 input:hover {
   border: solid 1.5px #3c4247;
+}
+
+#modalreset {
+  margin-top: 20px;
+  margin-bottom: unset;
+  width: 66px;
+  padding: unset;
 }
 
 label {
@@ -108,17 +114,18 @@ label {
   line-height: 1.4;
   margin-left: 2.25px;
 }
+/*End Inner Modal*/
 
 #leftScreenContainer {
   position: relative;
   float: left;
-  height: 340px;
+  height: 400px;
   width: 472px;
-  margin-top: 60px;
+  margin-top: 33px;
   border-radius: 25px;
   padding: 10px 10px 10px 15px;
   background-color: wheat;
-  justify-content: center;
+  justify-content: center
   }
 
 #flexContainer {
@@ -165,6 +172,10 @@ label {
 }
 /*Inv1 Button*/
 
+.btnContainer1 {
+  position: relative;
+}
+
  #inv1Btn {
   display: block;
   height: 175px;
@@ -175,22 +186,23 @@ label {
 
 .hoverText1  {
   position: absolute;
-  top: 101px;
-  left: 30px;
-  background: rgba(0, 0,0, 0.5);
-  width: 120px;
-  transition: .5s ease;
-  opacity: 0;
-  color: #e2e0dd;
-  font-size: 20px;
-  padding: 75px 5px;
-  text-align: center;
-  border-radius: 20px;
-  border: #e4d5c2 solid 2.5px;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0,0, 0.5);
+    width: 120px;
+    transition: .5s ease;
+    opacity: 0;
+    color: #e2e0dd;
+    font-size: 20px;
+    padding: 75px 5px;
+    text-align: center;
+    border-radius: 20px;
+    border: #e4d5c2 solid 2.5px;  
   }
 
   .btnContainer1:hover .hoverText1 {
     opacity: 1;
+    cursor: pointer;
   }
   
 
@@ -205,22 +217,23 @@ label {
 
 .hoverText2  {
   position: absolute;
-  top: 101px;
-  left: 180px;
-  background: rgba(0, 0,0, 0.5);
-  width: 120px;
-  transition: .5s ease;
-  opacity: 0;
-  color: #e2e0dd;
-  font-size: 20px;
-  padding: 63px 5px;
-  text-align: center;
-  border-radius: 20px;
-  border: #e4d5c2 solid 2.5px;
+    top: 121px;
+    left: 180px;
+    background: rgba(0, 0,0, 0.5);
+    width: 120px;
+    transition: .5s ease;
+    opacity: 0;
+    color: #e2e0dd;
+    font-size: 20px;
+    padding: 63px 5px;
+    text-align: center;
+    border-radius: 20px;
+    border: #e4d5c2 solid 2.5px;
   }
 
   .btnContainer2:hover .hoverText2 {
     opacity: 1;
+    cursor: pointer;
   }
 
 /*Inv3 Button*/
@@ -234,7 +247,7 @@ label {
 
 .hoverText3 {
   position: absolute;
-  top: 101px;
+  top: 120px;
   left: 332px;
   background: rgba(0, 0,0, 0.5);
   color: #e2e0dd;
@@ -250,58 +263,95 @@ label {
 
 .btnContainer3:hover .hoverText3 {
   opacity: 1;
+  cursor: pointer;
 }
 
 /*Right of Screen*/
-#previewDisplay {
-  float: right;
-  width: 493px;
-  height:  360px;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  border-style: none;
-  border-radius: 25px;
-  background-color: wheat;
+#rightScreenContainer {
+    position: relative;
+    float: right;
+    width: 493px;
+    height: 360px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    border-style: none;
+    border-radius: 25px;
+    background-color: wheat;
+    align-items: center;
+    vertical-align: middle;
 }
 
 #prevBorder {
-  border: #e4d5c2 solid 2px;
-  border-radius: 25px;
-  height: 306px;
-  width: 439px;
-  margin: 10px;
-  padding: 15px;
-  
+  position: absolute;
+    border: #e4d5c2 solid 2px;
+    border-radius: 25px;
+    height: 334px;
+    width: 465px;
+    margin: 12px;  
 }
 
 #prevPara {
+  position: absolute;
   line-height: 1.2;
   text-align: center;
-  margin-top: 25%;
   word-wrap: normal;
   font-size: 45px;
   font-weight: 900;
-  top: 50%;
+  top: 25%;
+  display: none; /*remove*/
 }
 
-/*#inv1 {
-  display: none;
+#inv1, #inv2, #inv3 {
+  position: absolute;
+  border-radius: 23px;
+  /*display: none; remove*/
 } 
-#innerPrev {
-  display: none;
-}*/
 
-.show {
-  display: block;
+
+
+#inv1Container {
+  position: absolute;
+  font-family: 'Elsie', cursive;
 }
 
+
+#inv1Inner {
+  position: absolute;
+  border-radius: 18px;
+  background-color: #e4d5c2b7;
+  margin: 20px;
+  /* display: none; */
+  width: 405px;
+  height: 253px;
+  padding: 20px 10px;
+  line-height: normal;
+}
+
+
+
+/*invitation text*/
 .invitePara {
   text-align: center;
-  padding: 10px;
+  padding: 3px;
+  margin: unset;
 }
 
-#ptnrAnd, #cele, #preTime {
+#ptnrAnd, #preTime {
   text-align: center;
+  font-size: 10px;
+}
+
+#cele {
+  text-align: center;
+  font-size: initial;
+}
+
+#invPtrOne, #invPtrTwo {
+  font-family: 'Oi', cursive;
+  font-weight: 400;
+  font-size: 95%;
+  color: #3c4247;
+  text-shadow: 1.5px 1.5px #fff;
 }
 
 h2 {

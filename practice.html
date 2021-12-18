@@ -67,21 +67,23 @@
       <label for="fname">First Partner's Name</label><br>
       <input type="text" name="fname" id="fname">
 
-      <br><br>
+      <br>
       <label for="sname">Second Partner's Name</label><br>
       <input type="text" name="sname" id="sname">
       
-      <br><br>
+      <br>
       <label for="date">Date of Wedding</label><br>
       <input type="text" name="date" id="date">
 
-      <br><br>
+      <br>
       <label for="time">Time</label><br>
       <input type="text" name="time" id="time">
 
-      <br><br>
+      <br>
       <label for="address">Location of Ceremony</label><br>
       <input type="text" name="address" id="address">
+      <br>
+      <input type="reset" name="reset" id="modalreset">
 
     </form>
   </div>
@@ -90,20 +92,19 @@
 <!-- Invite Details -->
 <!-- Prob change pclass to invite pids when styling css -->
 <div id=rightScreenContainer>
-
-  <div id="previewDisplay">
-        
+      
     <div id="prevBorder">
 
-      <p id="prevPara">Preview your invitation here!</p>
+    <p id="prevPara">Preview your invitation here!</p>
 
-      <div id="innerPrev"> 
-        <!--invitation previews-->
-        <!--Display 1-->
-        <div id="inv1Dis">  
+    <div id="innerPrevContainer"> 
+      <!--invitation previews-->
+      <!--Display 1-->
+      <div id="inv1Container">  
 
-          <img id="inv1" src='invite images/floral_2.png'>
+        <img id="inv1" src='invite images/floral_2.png'>
 
+        <div id="inv1Inner">
 
           <!-- Invite Text -->  
           <p class="invitePara"><span id="invPtrOne"></span></p>
@@ -121,13 +122,13 @@
           <p class="invitePara"><span id="wedTime"></span></p>
 
           <p class="invitePara"><span id="wedAdd"></span></p>
-
         </div>
 
       </div>
 
     </div>
-  </div>
+
+    </div>
 </div>
 
 
