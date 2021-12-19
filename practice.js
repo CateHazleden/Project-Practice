@@ -27,26 +27,28 @@ window.onclick = function(event) {
 //Flex box actions
 
 //Invitation 1/
+document.getElementById("inv1Btn").addEventListener("click", openInv1);
 
-function inv1Prev() {
-  let x = document.getElementById("inv1").src;
-  document.getElementById("prevBorder").innerHTML = x;
+function openInv1() {
+  document.getElementById("inv1Container").src = 
+  "inviteImages/floral_2.png";
 }
 
 
 
 //Invitation 2
 
-//Invitation 3
-function inv3Prev() {
- 
-  /* Access image by id and change
-  the display property to block*/
-  document.getElementById('inv3')
-          .style.display = "block";
+document.getElementById("inv2Btn").addEventListener("click", openInv2);
 
-  document.getElementById('inv3Btn')
-          .style.display = "none";
+function openInv2(){
+  document.getElementById("inv2Container").src = "inviteImages/Swirls_blur.png";
+}
+
+//Invitation 3
+document.getElementById("inv3Btn").addEventListener("click", openInv3);
+
+function openInv3(){
+  document.getElementById("inv3Container").src = "inviteImages/Swirls_blur.png";
 }
 
 //Key up events on invite

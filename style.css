@@ -83,7 +83,7 @@ background-color: rgb(212, 154, 45);
 
 
 /*Inner Modal Inputs*/
-input {
+#basicDetails input {
   color: #6e5d62;
   font-family: 'Elsie', cursive;
   font-weight: 900;
@@ -95,7 +95,7 @@ input {
   margin-bottom: 14px;
 }
 
-input:hover {
+#basicDetails input:hover {
   border: solid 1.5px #3c4247;
 }
 
@@ -205,7 +205,7 @@ border: transparent;
 
 .hoverText2  {
   position: absolute;
-    top: 111px;
+    top: 109px;
     left: 180px;
     background: rgba(0, 0,0, 0.5);
     width: 120px;
@@ -235,7 +235,7 @@ border: transparent;
 
 .hoverText3 {
   position: absolute;
-  top: 111px;
+  top: 109px;
   left: 332px;
   background: rgba(0, 0,0, 0.5);
   color: #e2e0dd;
@@ -276,6 +276,7 @@ border: transparent;
   height: 334px;
   width: 464px;
   margin: 12px;
+  font-family: 'Elsie', cursive;
 }
 
 #prevPara {
@@ -288,58 +289,65 @@ border: transparent;
   top: 25%;
   top: 50%;
   transform: translateY(-134px);
+  font-family: 'Elsie Swash Caps', cursive;
 }
 
 #inv1, #inv2, #inv3 {
-  position: absolute;
   border-radius: 23px;
 } 
-
-
 
 #inv1Container {
   position: absolute;
   display: none;
-  font-family: 'Elsie', cursive;
 }
-
 
 #inv1Inner {
   position: absolute;
   border-radius: 18px;
   background-color: #e4d5c2b7;
   margin: 20px;
-  /* display: none; */
+  display: none;
   width: 405px;
   height: 253px;
   padding: 20px 10px;
   line-height: normal;
 }
 
-#inv3 {
+#inv2Container {
   position: absolute;
-  border-radius: 25px;
-  height: 334px;
-  width: 464px;
-  margin: 12px;
-  /* display: none; */
- }
+  display: none;
+}
+
+#inv2Inner {
+  position: absolute;
+  border-radius: 18px;
+  background-color: #e4d5c2b7;
+  margin: 20px;
+  display: none; 
+  width: 405px;
+  height: 253px;
+  padding: 20px 10px;
+  line-height: normal;
+}
 
 #inv3Container {
   position: absolute;
   display: none;
   font-family: 'Elsie', cursive;
+  border-radius: 25px;
+  height: 334px;
+  width: 464px;
+  margin: 12px;
 }
-
 
 #inv3Inner {
   position: absolute;
   border-radius: 18px;
   background-color: #e4d5c2b7;
   margin: 20px;
-  /* display: none; */
+  display: none;
   width: 405px;
-  height: 253px;
+  height: 255px;
   padding: 20px 10px;
   line-height: normal;
 }
