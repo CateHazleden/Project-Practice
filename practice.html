@@ -7,138 +7,135 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <div id="mainContainer">
 
-</body>
+      <div id=leftScreenContainer>
 
-<div id=leftScreenContainer>
+        <h2>Choose Your Wedding Invitation Design</h2>
+        <!-- Flex Box with designs -->
+        <div id="flexContainer">
 
-  <h2>Choose Your Design</h2>
-  <!-- Flex Box with designs -->
-  <div id="flexContainer">
+          <div class="innerFlex">
+            <div class="btnContainer1">  
 
-    <div class="innerDiv">
-      <div class="btnContainer1">  
+              <button id="inv1Btn" onclick="inv1Prev()" style="background-image: url('inviteImages/floral_2.png');"></button>
 
-        <button id="inv1Btn" onclick="inv1Prev()" style="background-image: url('invite images/floral_2.png');"></button>
-
-        <span class="hoverText1" id="hv1">Bouquet</span>
-      </div>
-    </div>
-  
-
-    
-    <div class="innerDiv">
-      <div class="btnContainer2">  
-
-          <button id="inv2Btn" onclick="inv2Prev()" style="background-image: url('invite images/stripes_edit.png');"></button>
-
-        <span class="hoverText2">Racing to the Alter</span>
+              <div class="hoverText1" id="hv1">Bouquet</div>
+            </div>
+          </div>
         
-      </div>
-    </div>
 
-    <div class="innerDiv">
-      <div class="btnContainer3">
+          
+          <div class="innerFlex">
+            <div class="btnContainer2">  
 
-        <img id="inv3" style="display: none;" src="invite images/Swirls_blur.png">
+                <button id="inv2Btn" onclick="inv2Prev()" style="background-image: url('inviteImages/stripes_edit.png');"></button>
 
-        <button id="inv3Btn" onclick="inv3Prev()" style="background-image: url('invite images/Swirls_blur.png');"></button>
+              <div class="hoverText2">Racing to the Alter</div>
+              
+            </div>
+          </div>
 
-        <span class="hoverText3">Dizzy in Love</span>
-      </div>
-    </div>
-  </div>
-    <!-- Trigger/Open The Modal -->
-    <button id="modBtn">Personalise</button>   
-  
-</div>
+          <div class="innerFlex">
+            <div class="btnContainer3">
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+              <img id="inv3"  src="inviteImages/Swirls_blur.png" alt="swirls image"/>
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <!--<p>Form with real-time typing to go here</p>-->
-    <form id="basicDetails">
+              <button id="inv3Btn" onclick="inv3Prev()" style="background-image: url('inviteImages/Swirls_blur.png');"></button>
 
-      <label for="fname">First Partner's Name</label><br>
-      <input type="text" name="fname" id="fname">
+              <div class="hoverText3">Dizzy in Love</div>
+          </div>
+          </div>
 
-      <br>
-      <label for="sname">Second Partner's Name</label><br>
-      <input type="text" name="sname" id="sname">
-      
-      <br>
-      <label for="date">Date of Wedding</label><br>
-      <input type="text" name="date" id="date">
-
-      <br>
-      <label for="time">Time</label><br>
-      <input type="text" name="time" id="time">
-
-      <br>
-      <label for="address">Location of Ceremony</label><br>
-      <input type="text" name="address" id="address">
-      <br>
-      <input type="reset" name="reset" id="modalreset">
-
-    </form>
-  </div>
-</div>
-
-<!-- Invite Details -->
-<!-- Prob change pclass to invite pids when styling css -->
-<div id=rightScreenContainer>
-      
-    <div id="prevBorder">
-
-    <p id="prevPara">Preview your invitation here!</p>
-
-    <div id="innerPrevContainer"> 
-      <!--invitation previews-->
-      <!--Display 1-->
-      <div id="inv1Container">  
-
-        <img id="inv1" src='invite images/floral_2.png'>
-
-        <div id="inv1Inner">
-
-          <!-- Invite Text -->  
-          <p class="invitePara"><span id="invPtrOne"></span></p>
-
-          <p id="ptnrAnd">and</p>
-
-          <p class="invitePara"><span id="invPtrTwo"></span></p>       
-
-          <p id="cele">invite you to celebrate with them on</p>
+          <!-- Trigger/Open The Modal -->
+          <button id="modBtn">Personalise</button>   
         
-          <p class="invitePara"><span id="wedDate"></span></p>
+        </div>
 
-          <p id="preTime">at</p>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-          <p class="invitePara"><span id="wedTime"></span></p>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <!--<p>Form with real-time typing to go here</p>-->
+            <form id="basicDetails">
 
-          <p class="invitePara"><span id="wedAdd"></span></p>
+              <label for="fname">First Partner's Name</label><br>
+              <input type="text" name="fname" id="fname">
+
+              <br>
+              <label for="sname">Second Partner's Name</label><br>
+              <input type="text" name="sname" id="sname">
+              
+              <br>
+              <label for="date">Date of Wedding</label><br>
+              <input type="text" name="date" id="date">
+
+              <br>
+              <label for="time">Time</label><br>
+              <input type="text" name="time" id="time">
+
+              <br>
+              <label for="address">Location of Ceremony</label><br>
+              <input type="text" name="address" id="address">
+              <br>
+              <input type="reset" name="reset" id="modalreset">
+
+            </form>
+          </div>
         </div>
 
       </div>
 
-    </div>
+      <!-- Invite Details -->
+      <!-- Prob change pclass to invite pids when styling css -->
+      <div id=rightScreenContainer>
+            
+        <div id="prevBorder">
+
+          <p id="prevPara">Preview your wedding invitation here!</p>
+
+        
+
+          <div id="innerPrevContainer"> 
+            <!--invitation previews-->
+            <!--Display 1 from btn1-->
+            <div id="inv1Container">  
+
+              <img id="inv1" src='inviteImages/floral_2.png' alt=""/>
+
+              <div id="inv1Inner">
+
+                <!-- Display Text from keyup events-->  
+                <p class="invitePara"><span id="invPtrOne"></span></p>
+
+                <p id="ptnrAnd">and</p>
+
+                <p class="invitePara"><span id="invPtrTwo"></span></p>       
+
+                <p id="cele">invite you to celebrate with them on</p>
+              
+                <p class="invitePara"><span id="wedDate"></span></p>
+
+                <p id="preTime">at</p>
+
+                <p class="invitePara"><span id="wedTime"></span></p>
+
+                <p class="invitePara"><span id="wedAdd"></span></p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
 
     </div>
-</div>
-
-
-
-
-
-
-
-
-
+</body>
 
 <script src="practice.js"></script>
 </html>

@@ -116,17 +116,25 @@ label {
 }
 /*End Inner Modal*/
 
+#mainContainer {
+  position: relative;
+  display: inline-block;
+}
+
+/*leftScreenContainer*/
+
 #leftScreenContainer {
   position: relative;
   float: left;
-  height: 400px;
-  width: 472px;
-  margin-top: 33px;
+  height: 390px;
+  width: 470px;
+  margin-top: 21px;
+  margin-right: 7px;
   border-radius: 25px;
   padding: 10px 10px 10px 15px;
   background-color: wheat;
   justify-content: center
-  }
+}
 
 #flexContainer {
   display: flex;
@@ -141,35 +149,15 @@ label {
   align-items: center;
 }
 
-.innerDiv {
+.innerFlex {
   margin: 10px;
   height: 175px;
   width: 33%;
   border-radius: 20px;
   border: transparent;
- }
-
- /*.innerDiv:hover {
-   border-radius: 20px;
-   border: #e4d5c2 solid 2.5px;  
- }*/
-
- .innerDiv .hoverText {
-  visibility: hidden;
-  width: 120px;
-  color: #3c4247;
-  /*top: 50%;  
-  left: 50%;
-  transform: translate(-50%, -50%);*/
-  padding: 0 5px;
-  opacity: 0;
-  transition: opacity 1s;
- }
-
- .innerDiv:hover .hoverText {
-  visibility: visible;
-  opacity: 1;
 }
+
+
 /*Inv1 Button*/
 
 .btnContainer1 {
@@ -186,38 +174,38 @@ label {
 
 .hoverText1  {
   position: absolute;
-    top: 0px;
-    left: 0px;
-    background: rgba(0, 0,0, 0.5);
-    width: 120px;
-    transition: .5s ease;
-    opacity: 0;
-    color: #e2e0dd;
-    font-size: 20px;
-    padding: 75px 5px;
-    text-align: center;
-    border-radius: 20px;
-    border: #e4d5c2 solid 2.5px;  
-  }
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0,0, 0.5);
+  width: 120px;
+  transition: .5s ease;
+  opacity: 0;
+  color: #e2e0dd;
+  font-size: 20px;
+  padding: 75px 5px;
+  text-align: center;
+  border-radius: 20px;
+  border: #e4d5c2 solid 2.5px;  
+}
 
-  .btnContainer1:hover .hoverText1 {
-    opacity: 1;
-    cursor: pointer;
-  }
+.btnContainer1:hover .hoverText1 {
+  opacity: 1;
+  cursor: pointer;
+}
   
 
 /*Inv2 Button*/
 
- .innerDiv #inv2Btn {
-  height: 175px;
-  width: 100%;
-  border-radius: 20px;
-  border: transparent;
+#inv2Btn {
+height: 175px;
+width: 100%;
+border-radius: 20px;
+border: transparent;
 }
 
 .hoverText2  {
   position: absolute;
-    top: 121px;
+    top: 111px;
     left: 180px;
     background: rgba(0, 0,0, 0.5);
     width: 120px;
@@ -229,16 +217,16 @@ label {
     text-align: center;
     border-radius: 20px;
     border: #e4d5c2 solid 2.5px;
-  }
+}
 
-  .btnContainer2:hover .hoverText2 {
-    opacity: 1;
-    cursor: pointer;
-  }
+.btnContainer2:hover .hoverText2 {
+  opacity: 1;
+  cursor: pointer;
+}
 
 /*Inv3 Button*/
 
-.innerDiv #inv3Btn{
+#inv3Btn {
   height: 175px;
   width: 100%;
   border-radius: 20px;
@@ -247,7 +235,7 @@ label {
 
 .hoverText3 {
   position: absolute;
-  top: 120px;
+  top: 111px;
   left: 332px;
   background: rgba(0, 0,0, 0.5);
   color: #e2e0dd;
@@ -259,7 +247,7 @@ label {
   text-align: center;
   border-radius: 20px;
   border: #e4d5c2 solid 2.5px;
- }
+}
 
 .btnContainer3:hover .hoverText3 {
   opacity: 1;
@@ -268,26 +256,26 @@ label {
 
 /*Right of Screen*/
 #rightScreenContainer {
-    position: relative;
-    float: right;
-    width: 493px;
-    height: 360px;
-    margin-top: 60px;
-    margin-bottom: 50px;
-    border-style: none;
-    border-radius: 25px;
-    background-color: wheat;
-    align-items: center;
-    vertical-align: middle;
+  position: relative;
+  float: right;
+  width: 492px;
+  height: 360px;
+  margin-top: 46px;
+  margin-bottom: 50px;
+  border-style: none;
+  border-radius: 25px;
+  background-color: wheat;
+  align-items: center;
+  vertical-align: middle;
 }
 
 #prevBorder {
   position: absolute;
-    border: #e4d5c2 solid 2px;
-    border-radius: 25px;
-    height: 334px;
-    width: 465px;
-    margin: 12px;  
+  border: #e4d5c2 solid 2px;
+  border-radius: 25px;
+  height: 334px;
+  width: 464px;
+  margin: 12px;
 }
 
 #prevPara {
@@ -298,19 +286,20 @@ label {
   font-size: 45px;
   font-weight: 900;
   top: 25%;
-  display: none; /*remove*/
+  top: 50%;
+  transform: translateY(-134px);
 }
 
 #inv1, #inv2, #inv3 {
   position: absolute;
   border-radius: 23px;
-  /*display: none; remove*/
 } 
 
 
 
 #inv1Container {
   position: absolute;
+  display: none;
   font-family: 'Elsie', cursive;
 }
 
@@ -327,6 +316,33 @@ label {
   line-height: normal;
 }
 
+#inv3 {
+  position: absolute;
+  border-radius: 25px;
+  height: 334px;
+  width: 464px;
+  margin: 12px;
+  /* display: none; */
+ }
+
+#inv3Container {
+  position: absolute;
+  display: none;
+  font-family: 'Elsie', cursive;
+}
+
+
+#inv3Inner {
+  position: absolute;
+  border-radius: 18px;
+  background-color: #e4d5c2b7;
+  margin: 20px;
+  /* display: none; */
+  width: 405px;
+  height: 253px;
+  padding: 20px 10px;
+  line-height: normal;
+}
 
 
 /*invitation text*/
@@ -357,4 +373,5 @@ label {
 h2 {
   text-align: center;
   font-weight: 900;
+  font-size: 21px;
 }

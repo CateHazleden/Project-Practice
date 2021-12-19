@@ -7,12 +7,12 @@ const btn = document.getElementById("modBtn");
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// Clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
@@ -26,22 +26,28 @@ window.onclick = function(event) {
 
 //Flex box actions
 
-//Invitation 1
+//Invitation 1/
 
 function inv1Prev() {
-  let InviteOne = document.getElementById("inv1");
-  if (InviteOne.src.match('invite images/floral_2.png')) {
-    InviteOne.src = 'invite images/Swirls_blur.png';
-  }
-  else  {
-    InviteOne.src = 'invite images/floral_2.png';
-  }
+  let x = document.getElementById("inv1").src;
+  document.getElementById("prevBorder").innerHTML = x;
 }
+
+
 
 //Invitation 2
 
 //Invitation 3
+function inv3Prev() {
+ 
+  /* Access image by id and change
+  the display property to block*/
+  document.getElementById('inv3')
+          .style.display = "block";
 
+  document.getElementById('inv3Btn')
+          .style.display = "none";
+}
 
 //Key up events on invite
 
