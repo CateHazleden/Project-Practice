@@ -16,6 +16,7 @@ Elsie - google fonts
         let x = document.getElementById("inv1").src;
         document.getElementById("prevBorder").innerHTML = x;
     }
+    
 -----
     function inv1Prev() {
 

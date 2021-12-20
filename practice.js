@@ -31,7 +31,18 @@ window.onclick = function(event) {
 
 function inv1Prev() {
 
-  let x = document.getElementById("inv1").src ='inviteImages/floral_2.png';
+  let x = document.getElementById("inv1").src;
+
+  document.getElementById("inv1Display").innerHTML = x;
+
+  document.getElementById("prevPara").style.display = "none";
+}
+
+//Invitation 2
+
+function inv1Prev() {
+
+  let x = document.getElementById("inv1").src;
 
   document.getElementById("inv1Container").innerHTML = x;
 
@@ -39,21 +50,16 @@ function inv1Prev() {
 
 }
 
-//Invitation 2
-
-document.getElementById("inv2Btn").addEventListener("click", openInv2);
-
-function openInv2(){
-  document.getElementById("inv2Container").src = "inviteImages/Swirls_blur.png";
-}
-
 //Invitation 3
-document.getElementById("inv3Btn").addEventListener("click", openInv3);
 
-function openInv3(){
-  document.getElementById("inv3Container").src = "inviteImages/Swirls_blur.png";
+function inv1Prev() {
+
+  let x = document.getElementById("inv1").src = 'inviteImages/floral_2.png';
+
+  document.getElementById("inv1Container").innerHTML = x;
+
+  document.getElementById("prevPara").style.display = "none";
 }
-
 //Key up events on invite
 
 document.getElementById("fname").addEventListener("keyup", fnameDetail);

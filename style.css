@@ -169,10 +169,15 @@ label {
   height: 175px;
   width: 100%;
   border-radius: 20px;
-  border: transparent;
+  border: #e4d5c2 solid 2px;
+  color: #4a525a;
+  font-size: 26px;
+  font-family: 'Elsie Swash Caps';
+  font-weight: 900;
+  text-shadow: 2px 2px 1px #e4d5c2;
 }
 
-.hoverText1  {
+/*.hoverText1  {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -191,19 +196,25 @@ label {
 .btnContainer1:hover .hoverText1 {
   opacity: 1;
   cursor: pointer;
-}
+}*/
   
 
 /*Inv2 Button*/
 
 #inv2Btn {
-height: 175px;
-width: 100%;
-border-radius: 20px;
-border: transparent;
+  display: block;
+  height: 175px;
+  width: 100%;
+  border-radius: 20px;
+  border: #e4d5c2 solid 2px;
+  color: #4a525a;
+  font-size: 26px;
+  font-family: 'Elsie Swash Caps';
+  font-weight: 900;
+  text-shadow: 2px 2px 1px #e4d5c2;
 }
 
-.hoverText2  {
+/*.hoverText2  {
   position: absolute;
     top: 109px;
     left: 180px;
@@ -222,18 +233,24 @@ border: transparent;
 .btnContainer2:hover .hoverText2 {
   opacity: 1;
   cursor: pointer;
-}
+}*/
 
 /*Inv3 Button*/
 
 #inv3Btn {
+  display: block;
   height: 175px;
   width: 100%;
   border-radius: 20px;
-  border: transparent;
+  border: #e4d5c2 solid 2px;
+  color: #4a525a;
+  font-size: 26px;
+  font-family: 'Elsie Swash Caps';
+  font-weight: 900;
+  text-shadow: 2px 2px 1px #e4d5c2;
 }
 
-.hoverText3 {
+/*.hoverText3 {
   position: absolute;
   top: 109px;
   left: 332px;
@@ -252,7 +269,7 @@ border: transparent;
 .btnContainer3:hover .hoverText3 {
   opacity: 1;
   cursor: pointer;
-}
+}*/
 
 /*Right of Screen*/
 #rightScreenContainer {
@@ -293,19 +310,22 @@ border: transparent;
 }
 
 #inv1, #inv2, #inv3 {
+  display: none;
   border-radius: 23px;
 } 
 
 #inv1Container {
+  position: relative;
+}
+
+#inv1Display {
   position: absolute;
 }
 
-#inv1 {
-  display: none;
-}
 
 #inv1Inner {
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   border-radius: 18px;
   background-color: #e4d5c2b7;
   margin: 20px;

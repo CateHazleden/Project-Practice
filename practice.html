@@ -23,19 +23,17 @@
 
           <div class="btnContainer1">  
 
-            <button id="inv1Btn" onclick="inv1Prev()" style="background-image: url('inviteImages/floral_2.png');"></button>
+            <button id="inv1Btn" onclick="inv1Prev()" style="background-image: url('inviteImages/floral_2.png');">Bouquet</button>
 
-            <div class="hoverText1" id="hv1">Bouquet</div>
+            <!--<div class="hoverText1" id="hv1">Bouquet</div>-->
           </div>
-          
+
         </div>
                 
         <div class="innerFlex">
           <div class="btnContainer2">  
 
-              <button id="inv2Btn" onclick="inv2Prev()" style="background-image: url('inviteImages/stripes_edit.png');"></button>
-
-            <div class="hoverText2">Racing to the Alter</div>
+            <button id="inv2Btn" onclick="inv2Prev()" style="background-image: url('inviteImages/stripes_edit.png');">Racing to the Alter</button>
             
           </div>
         </div>
@@ -43,9 +41,9 @@
         <div class="innerFlex">
           <div class="btnContainer3">
 
-            <button id="inv3Btn" onclick="inv3Prev()" style="background-image: url('inviteImages/Swirls_blur.png');"></button>
+            <button id="inv3Btn" onclick="inv3Prev()" style="background-image: url('inviteImages/Swirls_blur.png');">Dizzy in Love</button>
 
-            <div class="hoverText3">Dizzy in Love</div>
+            <!--<div class="hoverText3"></div>-->
           </div>
         </div>
 
@@ -55,7 +53,7 @@
       </div>
 
       <!-- The Modal -->
-    <div id="myModal" class="modal">
+      <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
@@ -86,7 +84,7 @@
 
           </form>
         </div>
-    </div>
+      </div>
 
     </div>
     
@@ -96,12 +94,14 @@
 
         <p id="prevPara">Preview your wedding invitation here!</p>      
 
-        <div id="innerPrevContainer"> 
+         
           <!--invitation previews-->
-          <!--Display 1 from btn1-->
-          <div id="inv1Container">  
-
-            <img id="inv1" src='inviteImages/floral_2.png' alt=""/>
+          
+        <div id="inv1Container">
+            
+          <div id="inv1Display">
+            <img id="inv1" src="./inviteImages/floral_2.png" alt="flowers"/>
+          
 
             <div id="inv1Inner">
 
@@ -125,54 +125,56 @@
 
           </div>
 
-          <div id="inv2Container">
+        </div>
 
-            <img id="inv2"  src="inviteImages/stripes_edit.png" alt="stripes image"/>
+        <div id="inv2Container">
 
-            <div id="inv2Inner">
-              <p class="invitePara"><span id="invPtrOne"></span></p>
+          <img id="inv2"  src="inviteImages/stripes_edit.png" alt="stripes image"/>
 
-              <p id="ptnrAnd">and</p>
+          <div id="inv2Inner">
+            <p class="invitePara"><span id="invPtrOne"></span></p>
 
-              <p class="invitePara"><span id="invPtrTwo"></span></p>       
+            <p id="ptnrAnd">and</p>
 
-              <p id="cele">invite you to celebrate with them on</p>
-            
-              <p class="invitePara"><span id="wedDate"></span></p>
+            <p class="invitePara"><span id="invPtrTwo"></span></p>       
 
-              <p id="preTime">at</p>
+            <p id="cele">invite you to celebrate with them on</p>
+          
+            <p class="invitePara"><span id="wedDate"></span></p>
 
-              <p class="invitePara"><span id="wedTime"></span></p>
+            <p id="preTime">at</p>
 
-              <p class="invitePara"><span id="wedAdd"></span></p>
-            </div>
+            <p class="invitePara"><span id="wedTime"></span></p>
+
+            <p class="invitePara"><span id="wedAdd"></span></p>
           </div>
+        </div>
 
-          <div id="inv3Container">
+        <div id="inv3Container">
 
-            <img id="inv3"  src="inviteImages/Swirls_blur.png" alt="swirls image"/>
+          <img id="inv3"  src="inviteImages/Swirls_blur.png" alt="swirls image"/>
 
-            <div id="inv3Inner">
-              <p class="invitePara"><span id="invPtrOne"></span></p>
+          <div id="inv3Inner">
+            <p class="invitePara"><span id="invPtrOne"></span></p>
 
-              <p id="ptnrAnd">and</p>
+            <p id="ptnrAnd">and</p>
 
-              <p class="invitePara"><span id="invPtrTwo"></span></p>       
+            <p class="invitePara"><span id="invPtrTwo"></span></p>       
 
-              <p id="cele">invite you to celebrate with them on</p>
-            
-              <p class="invitePara"><span id="wedDate"></span></p>
+            <p id="cele">invite you to celebrate with them on</p>
+          
+            <p class="invitePara"><span id="wedDate"></span></p>
 
-              <p id="preTime">at</p>
+            <p id="preTime">at</p>
 
-              <p class="invitePara"><span id="wedTime"></span></p>
+            <p class="invitePara"><span id="wedTime"></span></p>
 
-              <p class="invitePara"><span id="wedAdd"></span></p>
-            </div>
-            
+            <p class="invitePara"><span id="wedAdd"></span></p>
           </div>
           
         </div>
+          
+        
       </div>
     </div>
 
