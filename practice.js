@@ -27,14 +27,17 @@ window.onclick = function(event) {
 //Flex box actions
 
 //Invitation 1/
-document.getElementById("inv1Btn").addEventListener("click", openInv1);
 
-function openInv1() {
-  document.getElementById("inv1Container").src = 
-  "inviteImages/floral_2.png";
+
+function inv1Prev() {
+
+  let x = document.getElementById("inv1").src ='inviteImages/floral_2.png';
+
+  document.getElementById("inv1Container").innerHTML = x;
+
+  document.getElementById("prevPara").style.display = "none";
+
 }
-
-
 
 //Invitation 2
 

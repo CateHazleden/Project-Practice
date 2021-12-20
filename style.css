@@ -164,7 +164,7 @@ label {
   position: relative;
 }
 
- #inv1Btn {
+#inv1Btn {
   display: block;
   height: 175px;
   width: 100%;
@@ -298,6 +298,9 @@ border: transparent;
 
 #inv1Container {
   position: absolute;
+}
+
+#inv1 {
   display: none;
 }
 
