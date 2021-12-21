@@ -30,21 +30,23 @@ window.onclick = function(event) {
 
 
 function inv1Prev() {
+  
+  document.getElementById("inv1Container").style.backgroundImage = "url(inviteImages/floral_2.png)";
 
-  let x = document.getElementById("inv1").src;
+  /*let x = document.getElementById("inv1").src;
 
-  document.getElementById("inv1Display").innerHTML = x;
+  document.getElementById("inv1Display").innerHTML = x;*/
 
   document.getElementById("prevPara").style.display = "none";
 }
 
 //Invitation 2
 
-function inv1Prev() {
+function inv2Prev() {
 
-  let x = document.getElementById("inv1").src;
+  let x = document.getElementById("inv2").src;
 
-  document.getElementById("inv1Container").innerHTML = x;
+  document.getElementById("inv2Container").innerHTML = x;
 
   document.getElementById("prevPara").style.display = "none";
 
@@ -52,11 +54,11 @@ function inv1Prev() {
 
 //Invitation 3
 
-function inv1Prev() {
+function inv3Prev() {
 
-  let x = document.getElementById("inv1").src = 'inviteImages/floral_2.png';
+  let x = document.getElementById("inv3").src = 'inviteImages/floral_2.png';
 
-  document.getElementById("inv1Container").innerHTML = x;
+  document.getElementById("inv3Container").innerHTML = x;
 
   document.getElementById("prevPara").style.display = "none";
 }
