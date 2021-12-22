@@ -34,13 +34,22 @@ Elsie - google fonts
     }
 
 -----
-inv3Container
-    position: absolute;
-    /* float: right; */
-    border-radius: 25px;
-    height: 334px;
-    width: 464px;
-    top: 20px;
-    margin: 12px;
-    transform: translateX(169px);
-    /* display: none;
+<div id="inv1Inner">
+
+              <!-- Display Text from keyup events-->  
+              <p class="invitePara"><span id="invPtrOne"></span></p>
+
+              <p id="ptnrAnd">and</p>
+
+              <p class="invitePara"><span id="invPtrTwo"></span></p>       
+
+              <p id="cele">invite you to celebrate with them on</p>
+            
+              <p class="invitePara"><span id="wedDate"></span></p>
+
+              <p id="preTime">at</p>
+
+              <p class="invitePara"><span id="wedTime"></span></p>
+
+              <p class="invitePara"><span id="wedAdd"></span></p>
+            </div>

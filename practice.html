@@ -15,6 +15,7 @@
     <div id=leftScreenContainer>
 
       <h2>Choose Your Wedding Invitation Design</h2>
+
       <!-- Flex Box with buttons -->
       
       <div id="flexContainer">
@@ -23,27 +24,27 @@
 
           <div class="btnContainer1">  
 
-            <button id="inv1Btn" onclick="inv1Prev()" style="background-image: url('inviteImages/floral_2.png');">Bouquet</button>
+            <button class="button" id="inv1Btn" onclick="inv1Prev()" style="background-image: url('inviteImages/floral_2.png');">Bouquet</button>
 
-            <!--<div class="hoverText1" id="hv1">Bouquet</div>-->
           </div>
 
         </div>
                 
         <div class="innerFlex">
+
           <div class="btnContainer2">  
 
-            <button id="inv2Btn" onclick="inv2Prev()" style="background-image: url('inviteImages/stripes_thumb.png');">Racing to the Alter</button>
+            <button class="button" id="inv2Btn" onclick="inv2Prev()" style="background-image: url('inviteImages/stripes_thumb.png'); background-repeat: no-repeat; background-size: cover;">Racing to the Alter</button>
             
           </div>
         </div>
 
         <div class="innerFlex">
+
           <div class="btnContainer3">
 
-            <button id="inv3Btn" onclick="inv3Prev()" style="background-image: url('inviteImages/Swirls_blur.png');">Dizzy in Love</button>
+            <button class="button" id="inv3Btn" onclick="inv3Prev()" style="background-image: url('inviteImages/Swirls_blur.png');">Dizzy in Love</button>
 
-            <!--<div class="hoverText3"></div>-->
           </div>
         </div>
 
@@ -58,7 +59,7 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
-          <!--Form with real-time typing to go here-->
+          <!--Form with real-time typing here-->
           <form id="basicDetails">
 
             <label for="fname">First Partner's Name</label><br>
@@ -97,46 +98,62 @@
          
           <!--invitation previews-->
           
-        <div id="inv1Container" style="height: 100%; width: 100%; background-repeat: no-repeat; background-size: cover;">
+        <div id="invContainer" style="height: 100%; width: 100%; background-repeat: no-repeat; background-size: cover;">
+
           <img id="inv1" src="./inviteImages/floral_2.png" alt="flowers"/>
 
-          <div id="inv1Display">
+          <img id="inv2"  src="inviteImages/stripes_edit.png" alt="stripes image"/>
 
-            <div id="inv1Inner">
+          <img id="inv3"  src="./inviteImages/Swirls_blur.png" alt="swirls image"/>
+
+          <div id="invDisplay">
+
+            <table id="invInner">
 
               <!-- Display Text from keyup events-->  
-              <p class="invitePara"><span id="invPtrOne"></span></p>
+              <tr> 
+                 <td id="iP1">
+                   <span id="invPtrOne"></span>
+                </td>
+              </tr>
 
-              <p id="ptnrAnd">and</p>
+              <tr>
+                <td id="ptnrAnd">and</td>
+              </tr>
 
-              <p class="invitePara"><span id="invPtrTwo"></span></p>       
+              <tr>
+                <td id="iP2"><span id="invPtrTwo"></span></td> 
+              </tr>       
 
-              <p id="cele">invite you to celebrate with them on</p>
+              <tr>
+                <td id="cele">invite you to celebrate their marriage</td>
+              </tr>
             
-              <p class="invitePara"><span id="wedDate"></span></p>
+              <tr>
+                <td id="iP3"><span id="wedDate"></span>
+                </td> 
+              </tr>
 
-              <p id="preTime">at</p>
+              <tr>
+                <td id="preTime">at</td>
+              </tr>
 
-              <p class="invitePara"><span id="wedTime"></span></p>
+              <tr>
+                <td id="iP4"><span id="wedTime"></span>
+                </td>
+              </tr>
 
-              <p class="invitePara"><span id="wedAdd"></span></p>
-            </div>
+              <tr>
+                <td id="iP5"><span id="wedAdd"></span></td>
+              </tr>
+            </table>
 
           </div>
 
         </div>
 
-        <div id="inv2Container" style="height: 100%; width: 100%; background-repeat: no-repeat; background-size: cover;">
+        
 
-          <img id="inv2"  src="inviteImages/stripes_edit.png" alt="stripes image"/>
-
-        </div>
-
-        <div id="inv3Container" style="height: 100%; width: 100%; background-repeat: no-repeat; background-size: cover;"> 
-
-          <img id="inv3"  src="./inviteImages/Swirls_blur.png" alt="swirls image"/>
-          
-        </div>
           
         
       </div>

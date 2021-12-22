@@ -38,7 +38,7 @@ background-color: rgb(212, 154, 45);
   border-radius: 20px;
   width: 60%;
   overflow: auto;
-  transform: translateY(1%);
+  transform: translateY(10%);
   }
 
 /* Modal Close Button */
@@ -59,7 +59,7 @@ background-color: rgb(212, 154, 45);
 /*Modal Open button*/
 #modBtn {
   position: absolute;
-  top: 90%;
+  top: 91%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #3c4247;
@@ -68,8 +68,8 @@ background-color: rgb(212, 154, 45);
   font-size: large;
   background-color: #f6dc72;
   border: peru 1.5px solid;
-  border-radius: 6px;
-  padding: 7px 13px 7px 13px;
+  border-radius: 14px;
+  padding: 10px 25px 10px 25px;
 }
 
 #modBtn:hover{
@@ -83,7 +83,7 @@ background-color: rgb(212, 154, 45);
 
 
 /*Inner Modal Inputs*/
-#basicDetails input {
+#basicDetails input[type="text"] {
   color: #6e5d62;
   font-family: 'Elsie', cursive;
   font-weight: 900;
@@ -91,26 +91,35 @@ background-color: rgb(212, 154, 45);
   background-color: #ddd7cf;
   border: solid 1.5px peru;
   line-height: 1.4;
-  padding: 2px 0px 0 3px;
+  padding: 2px 0px 0 6px;
   margin-bottom: 14px;
+  font-size: 15px;
 }
 
 #basicDetails input:hover {
   border: solid 1.5px #3c4247;
 }
 
-#modalreset {
-  margin-top: 20px;
-  margin-bottom: unset;
-  width: 66px;
-  padding: unset;
+ input#modalreset {
+  margin-top: 27px;
+    margin-bottom: unset;
+    width: 69px;
+    height: 28px;
+    padding: 2px;
+    border-radius: 6px;
+    color: peru;
+    font-size: 16px;
+    font-family: 'Elsie', cursive;
+    background-color: #ddd7cf;
+    border: solid 1.5px peru;
+    cursor: pointer;
 }
 
 label {
   color: #3c4247;
   font-family: 'Elsie', cursive;
   font-weight: 400;
-  font-size: 90%;
+  font-size: 98%;
   line-height: 1.4;
   margin-left: 2.25px;
 }
@@ -126,10 +135,9 @@ label {
 #leftScreenContainer {
   position: relative;
   float: left;
-  height: 390px;
-  width: 470px;
-  margin-top: 21px;
-  margin-right: 7px;
+  height: 450px;
+  width: 590px;
+  margin: 39px 7px 39px 15px;
   border-radius: 25px;
   padding: 10px 10px 10px 15px;
   background-color: wheat;
@@ -142,7 +150,7 @@ label {
   background-color: peru;
   border-radius: 20px;
   border: none;
-  width: 456px;
+  width: 97.3%;
   height: 63%;
   padding: 5px;
   justify-content: space-evenly;
@@ -151,12 +159,21 @@ label {
 
 .innerFlex {
   margin: 10px;
-  height: 175px;
+  height: 230px;
   width: 33%;
   border-radius: 20px;
   border: transparent;
 }
 
+.button {
+  opacity: 1;
+  transition-duration: 0.7s;
+}
+
+.button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
 
 /*Inv1 Button*/
 
@@ -166,7 +183,7 @@ label {
 
 #inv1Btn {
   display: block;
-  height: 175px;
+  height: 230px;
   width: 100%;
   border-radius: 20px;
   border: #e4d5c2 solid 2px;
@@ -175,35 +192,13 @@ label {
   font-family: 'Elsie Swash Caps';
   font-weight: 900;
   text-shadow: 2px 2px 1px #e4d5c2;
-}
-
-/*.hoverText1  {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background: rgba(0, 0,0, 0.5);
-  width: 120px;
-  transition: .5s ease;
-  opacity: 0;
-  color: #e2e0dd;
-  font-size: 20px;
-  padding: 75px 5px;
-  text-align: center;
-  border-radius: 20px;
-  border: #e4d5c2 solid 2.5px;  
-}
-
-.btnContainer1:hover .hoverText1 {
-  opacity: 1;
-  cursor: pointer;
-}*/
-  
+} 
 
 /*Inv2 Button*/
 
 #inv2Btn {
   display: block;
-  height: 175px;
+  height: 230px;
   width: 100%;
   border-radius: 20px;
   border: #e4d5c2 solid 2px;
@@ -213,33 +208,12 @@ label {
   font-weight: 900;
   text-shadow: 2px 2px 1px #e4d5c2;
 }
-
-/*.hoverText2  {
-  position: absolute;
-    top: 109px;
-    left: 180px;
-    background: rgba(0, 0,0, 0.5);
-    width: 120px;
-    transition: .5s ease;
-    opacity: 0;
-    color: #e2e0dd;
-    font-size: 20px;
-    padding: 63px 5px;
-    text-align: center;
-    border-radius: 20px;
-    border: #e4d5c2 solid 2.5px;
-}
-
-.btnContainer2:hover .hoverText2 {
-  opacity: 1;
-  cursor: pointer;
-}*/
 
 /*Inv3 Button*/
 
 #inv3Btn {
   display: block;
-  height: 175px;
+  height: 230px;
   width: 100%;
   border-radius: 20px;
   border: #e4d5c2 solid 2px;
@@ -250,35 +224,13 @@ label {
   text-shadow: 2px 2px 1px #e4d5c2;
 }
 
-/*.hoverText3 {
-  position: absolute;
-  top: 109px;
-  left: 332px;
-  background: rgba(0, 0,0, 0.5);
-  color: #e2e0dd;
-  width: 120px;
-  transition: .5s ease;
-  opacity: 0;
-  font-size: 20px;
-  padding: 75px 5px;
-  text-align: center;
-  border-radius: 20px;
-  border: #e4d5c2 solid 2.5px;
-}
-
-.btnContainer3:hover .hoverText3 {
-  opacity: 1;
-  cursor: pointer;
-}*/
-
 /*Right of Screen*/
 #rightScreenContainer {
   position: relative;
   float: right;
-  width: 492px;
-  height: 360px;
-  margin-top: 46px;
-  margin-bottom: 50px;
+  width: 595px;
+  height: 405px;
+  margin: 76px 15px 50px 0;
   border-style: none;
   border-radius: 25px;
   background-color: wheat;
@@ -290,22 +242,21 @@ label {
   position: absolute;
   border: #e4d5c2 solid 2px;
   border-radius: 25px;
-  height: 334px;
-  width: 464px;
-  margin: 12px;
+  height: 90%;
+  width: 93%;
+  margin: 19px;
   font-family: 'Elsie', cursive;
 }
 
 #prevPara {
   position: absolute;
-  line-height: 1.2;
+  line-height: 1.3;
   text-align: center;
   word-wrap: normal;
-  font-size: 45px;
+  font-size: 52px;
   font-weight: 900;
-  top: 25%;
   top: 50%;
-  transform: translateY(-134px);
+  transform: translateY(-151px);
   font-family: 'Elsie Swash Caps', cursive;
 }
 
@@ -313,66 +264,77 @@ label {
   display: none;  
 }
 
-#inv1Container {
+#invContainer {
   position: relative;
   border-radius: 18px;
 }
 
-/*#inv2Container {
-  position: absolute;
-  display: none;
-  height: 100%; 
-  width: 100%; 
-  background-repeat: no-repeat; background-size: cover;
-}*/
-
-/*#inv3Container {
-  position: absolute;
-  display: none;
-  height: 100%; 
-  width: 100%; 
-  background-repeat: no-repeat; background-size: cover;
-}*/
-
-#inv1Inner { 
+#invDisplay {
+  display: table;
+  table-layout: fixed;
   visibility: hidden;
   border-radius: 18px;
   background-color: #e4d5c2b7; 
-  width: 405px;
-  height: 253px;
-  padding: 20px 10px;
-  line-height: normal;
+  width: 513px;
+  height: 323px;
   transform: translate(20px, 20px);
+  line-height: normal;
 }
 
-
-/*invitation text*/
-.invitePara {
-  text-align: center;
-  padding: 3px;
-  margin: unset;
+#invInner {
+  border: none;
+  padding: 31px;
+  width: 100%;
 }
 
-#ptnrAnd, #preTime {
-  text-align: center;
-  font-size: 10px;
+td {
+  height: 20px;
+  vertical-align: middle;
 }
 
-#cele {
+td span {
+  display: block;
   text-align: center;
-  font-size: initial;
+  margin: 0 auto;
+  height: 20px;
 }
 
 #invPtrOne, #invPtrTwo {
   font-family: 'Oi', cursive;
   font-weight: 400;
-  font-size: 95%;
+  font-size: 33px;
   color: #3c4247;
   text-shadow: 1.5px 1.5px #fff;
+  height: 33px;
+  vertical-align: middle;
+}
+
+#ptnrAnd {
+  text-align: center;
+  font-size: 10px;
+  padding-top: 15px;
+}
+
+#cele, #wedDate, #wedTime, #wedAdd {
+  font-size: 20px;
+}
+
+#cele {
+  text-align: center;
+  padding-top: 18px;
+  }
+
+#preTime {
+  text-align: center;
+  font-size: 10px;
+  vertical-align: middle;
+}
+#wedAdd {
+  padding-top: 5px;
 }
 
 h2 {
   text-align: center;
   font-weight: 900;
-  font-size: 21px;
+  font-size: 29px;
 }

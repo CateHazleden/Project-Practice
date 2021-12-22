@@ -24,49 +24,52 @@ window.onclick = function(event) {
   }
 }
 
-//Flex box actions
+// Reset button connect to clear innerDiv onkey events
 
-//Invitation 1/
 
+// Flex box actions
+
+// Invitation 1
 
 function inv1Prev() {
   
-  document.getElementById("inv1Container").style.backgroundImage = "url(inviteImages/floral_2.png)";
+  document.getElementById("invContainer").style.backgroundImage = "url(inviteImages/floral_2.png)";
 
-  document.getElementById("inv1Inner").style.visibility = "visible";
+  document.getElementById("invDisplay").style.visibility = "visible";
 
   document.getElementById("prevPara").style.display = "none";
 }
 
-//Invitation 2
+// Invitation 2
 
 function inv2Prev() {
 
-  document.getElementById("inv1Container").style.backgroundImage = "url(inviteImages/stripes_edit.png)";
+  document.getElementById("invContainer").style.backgroundImage = "url(inviteImages/stripes_edit.png)";
 
-  document.getElementById("inv1Inner").style.visibility = "visible";
+  document.getElementById("invDisplay").style.visibility = "visible";
 
   document.getElementById("prevPara").style.display = "none";
 
 }
 
-//Invitation 3
+// Invitation 3
 
 function inv3Prev() {
 
-  document.getElementById("inv1Container").style.backgroundImage = "url(inviteImages/Swirls_blur.png)";
+  document.getElementById("invContainer").style.backgroundImage = "url(inviteImages/Swirls_blur.png)";
 
-  document.getElementById("inv1Inner").style.visibility = "visible";
+  document.getElementById("invDisplay").style.visibility = "visible";
 
   document.getElementById("prevPara").style.display = "none";
 }
-//Key up events on invite
+// Key up events on invite
 
 document.getElementById("fname").addEventListener("keyup", fnameDetail);
 
 function fnameDetail() {
   
   let x = document.getElementById("fname").value;
+
   document.getElementById("invPtrOne").innerHTML = x;
 }
   
@@ -75,6 +78,7 @@ document.getElementById("sname").addEventListener("keyup", snameDetail);
 function snameDetail() {
   
   let x = document.getElementById("sname").value;
+
   document.getElementById("invPtrTwo").innerHTML = x;
 }
 
@@ -83,6 +87,7 @@ document.getElementById("date").addEventListener("keyup", dateDetail);
 function dateDetail() {
   
   let x = document.getElementById("date").value;
+
   document.getElementById("wedDate").innerHTML = x;
 }
 
@@ -91,6 +96,7 @@ document.getElementById("time").addEventListener("keyup", timeDetail);
 function timeDetail() {
   
   let x = document.getElementById("time").value;
+
   document.getElementById("wedTime").innerHTML = x;
 }
 
@@ -99,5 +105,6 @@ document.getElementById("address").addEventListener("keyup", addDetail);
 function addDetail() {
   
   let x = document.getElementById("address").value;
+
   document.getElementById("wedAdd").innerHTML = x;
 }
