@@ -122,3 +122,4 @@ function addDetail() {
 
   document.getElementById("wedAdd").innerHTML = x;
 }
+
