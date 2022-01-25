@@ -24,6 +24,11 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button
 https://www.w3schools.com/jsref/jsref_touppercase.asp
 
 --alt font styles--
+OPTION 1
+html
+button onclick stripesFonts()
+
+js
 
 function stripesFonts() {  
 
@@ -35,8 +40,7 @@ function stripesFonts() {
       changeFont[i].style.color= "#4a525a";
     }
   }
-html
-button onclick stripesFonts()
+
 
 --------------------------------------
 OPTION 2
@@ -63,31 +67,27 @@ function swirlsFont() {
 }
 
 -------------------------------------
-OPTION 3
+***OPTION 3***
 html
-<button class="stylebutton" onclick="changeStyle(0,'Elsie Swash','#' )">Bouquet</button>
-<button class="stylebutton" onclick="changeStyle(1,'Trirong, serif','black' )">Racing to the Alter</button>
-<button class="stylebutton" onclick="changeStyle(2,'Playfair Display', 'white')">Dizzy in Love</button>
+button onclick stripesFonts()
+
 
 js
 
-let backgrounds = ['url("inviteImages/floral_2.png")','url("inviteImages/stripes_edit.png")','url("inviteImages/Swirls_blur.png")' ] ;
+[ 'invPtrOne', 'invPtrTwo' ].forEach(stripesFonts) {
 
-function changeStyle(image, font, color){
-    document.getElementById("card").style.backgroundImage =backgrounds[image];
+    document.getElementById( "stripesFonts" ).style.color = "red";
 
-    document.getElementById("initial").style.fontFamily =font ;
-    document.getElementById("invitation").style.fontFamily =font;
-    document.getElementById("firstname").style.fontFamily =font;
-    document.getElementById("lastname").style.fontFamily =font;
-    document.getElementById("weddingdate").style.fontFamily =font;
-    document.getElementById("weddinglocation").style.fontFamily =font;
+});
 
-    document.getElementById("card").style.color =color;
-    document.getElementById("initial").style.color =color;
-    document.getElementById("invitation").style.color =color;
-    document.getElementById("firstname").style.color =color;
-    document.getElementById("lastname").style.color =color;
-    document.getElementById("weddingdate").style.color =color;
-    document.getElementById("weddinglocation").style.color =color;
-}
+--------------------------------------
+tested js for fontchange
+
+***test 1***
+const cf1 = document.getElementById("inv2Btn");
+cf1.addEventListener("click", arrayOne);
+
+let arrayOne = ['invPtrOne', 'invPtrTwo'];
+arrayOne.forEach(a => {
+  a.style.fontFamily = 'Molle', cursive;
+});

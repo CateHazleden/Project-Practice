@@ -123,3 +123,16 @@ function addDetail() {
   document.getElementById("wedAdd").innerHTML = x;
 }
 
+/* Font Change per design
+
+function fntChnge1() {
+
+ let x = document.getElementById("fname").className = stripesFonts1;
+
+ document.getElementById("invPtrOne").innerHTML = x;
+
+ let y = document.getElementById("sname").classname = stripesFonts1;
+
+ document.getElementById("invPtrTwo").innerHTML = y;
+
+} */
